@@ -1,0 +1,277 @@
+.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+}
+
+.modal-content {
+    margin: auto;
+}
+
+.slider-wrapper {
+    --overlay-color: rgba(127, 129, 124, 0.8);
+    --active-color: #df1212;
+    --inactive-color: gray;
+    --transition-duration: 0.3s;
+    --slide-margin: 10px;
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin-left: calc(-1 * var(--slide-margin));
+}
+
+.slide {
+    min-width: calc(25% - var(--slide-margin) * 2);
+    margin: 0 var(--slide-margin);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity var(--transition-duration);
+}
+
+.slide:hover .hover-overlay {
+    opacity: 1;
+}
+
+.hover-overlay h2,
+.hover-overlay p {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    color: var(--active-color);
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 2px solid var(--active-color);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+.read-more:hover {
+    background-color: var(--active-color);
+    color: #fff;
+}
+
+.dots {
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    margin-bottom: -690px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: red;
+}
+
+.hover-content {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(169, 82, 82);
+}
+
+.hover-content .read-more-btn {
+    background-color: #ff6600;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.flex-column-section {
+    margin-bottom: 20px;
+}
+
+.section-title p {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.flex-column-section h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.flex-column-section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.vh-100 {
+    height: 100vh;
+}
+
+
+.card {
+    margin: 8px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.text-section {
+    cursor: pointer;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.text-section:hover {
+    background-color: rgb(231, 55, 55);
+}
+
+.project-section h6 {
+    margin-top: 45px;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.project-section h3 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.card-body i {
+    color: #d00e1b;
+    
+}
+.card:hover {
+    background-color: #929ba4;
+    transition: background-color 0.3s ease;
+}
+
+.card-title {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    max-height: 520px;
+    object-fit: cover;
+}
+
+.project-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.equal-height {
+    display: flex;
+    align-items: stretch;
+}
+
+.flex-column-section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.section-title {
+    text-align: left;
+}
+
+.vh-100 {
+    height: 100vh;
+}
+
+.footer {
+    background-color: #c21a1a;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .col-md-2 {
+    flex: 1 1 100px;
+    max-width: 200px;
+    padding: 10px;
+}
+
+.logo-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    max-width: 100px; 
+    margin: 10px;
+    background: transparent; 
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyle-Assignment</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Section 1: Digital Marketing Agency -->
+    <div class="container-fluid vh-100 d-flex align-items-center justify-content-center">
+        <div class="row w-100 d-flex align-items-center justify-content-center">
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                <div class="contact-text text-left p-1">
+                    <div class="section-title text-left">
+                        <p class="text-danger">AWARD WINNING</p>
+                    </div>
+                    <h1>DIGITAL MARKETING AGENCY</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quo tempora alias quod eligendi
+                        culpa iste nemo tempore libero, eum molestias atque quae mollitia nesciunt repudiandae
+                        voluptatem, minus at! Tempora!</p>
+                    <button type="button" class="btn btn-danger mt-3" data-toggle="modal"
+                        data-target="#contactModal">CONTACT US</button>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-center justify-content-center">
+                <div class="contact-image">
+                    <img src="img/contact-image.png" class="img-fluid rounded" alt="Contact Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2: What We Do -->
+    <div class="container my-5">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6">
+                <div class="section-title text-left">
+                    <h5 class="text-danger">WHAT WE DO</h5>
+                </div>
+                <div class="flex-column-section text-left">
+                    <h1>SERVICES PROVIDED FOR YOU</h1>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="flex-column-section">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quo tempora alias quod eligendi
+                        culpa iste nemo tempore libero, eum molestias atque quae mollitia nesciunt repudiandae
+                        voluptatem, minus at! Tempora!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3: Slider -->
+    <div class="slider-wrapper">
+        <div class="slider">
+            <div class="slides">
+                <!-- Duplicate last slide for seamless loop -->
+                <div class="slide"><img src="img/slider-3.png" alt="Image 3">
+                    <div class="hover-overlay">
+                        <h2>WEB DEVELOPMENT</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, magnam.</p>
+                        <a href="https://fylehq.com" class="read-more" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <!-- Slides -->
+                <div class="slide"><img src="img/slider-1.png" alt="Image 1">
+                    <div class="hover-overlay">
+                        <h2>WEB DEVELOPMENT</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, aperiam?</p>
+                        <a href="https://fylehq.com" class="read-more" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="slide"><img src="img/slider-2.png" alt="Image 2">
+                    <div class="hover-overlay">
+                        <h2>WEB DEVELOPMENT</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, repellendus.</p>
+                        <a href="https://fylehq.com" class="read-more" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="slide"><img src="img/slider-3.png" alt="Image 3">
+                    <div class="hover-overlay">
+                        <h2>WEB DEVELOPMENT</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, magnam.</p>
+                        <a href="https://fylehq.com" class="read-more" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="slide"><img src="img/slider-2.png" alt="Image 4">
+                    <div class="hover-overlay">
+                        <h2>WEB DEVELOPMENT</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, assumenda.</p>
+                        <a href="https://fylehq.com" class="read-more" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <!-- Duplicate first slide for seamless loop -->
+                <div class="slide"><img src="img/slider-1.png" alt="Image 1">
+                    <div class="hover-overlay">
+                        <h2>WEB DEVELOPMENT</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, aperiam?</p>
+                        <a href="https://fylehq.com" class="read-more" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+
+    <!-- Section 4: Our Project -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-12 project-section">
+                <h6 class="text-danger">OUR PROJECT</h6>
+                <h3>WHY WE ARE THE BEST</h3>
+            </div>
+        </div>
+        <div class="row equal-height">
+            <div class="col-md-6 image-section">
+                <img id="displayImage"
+                    src="https://images.pexels.com/photos/919278/pexels-photo-919278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="Display Image" class="img-fluid">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <div class="text-section" onclick="changeImage('img/image-1.jpeg')">
+                    <h3>Genderless Kei - Japans's Hot</h3>
+                    <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+                <div class="text-section" onclick="changeImage('img/image-2.jpeg')">
+                    <h3>Better Strategy & Quality</h3>
+                    <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+                <div class="text-section" onclick="changeImage('img/image-3.webp')">
+                    <h3>Genderless Kei - Japans's Hot</h3>
+                    <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 5: Statistics -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-12 project-section text-center">
+                <h6 class="text-danger">EXPERTS GROWTH</h6>
+                <h3>OUR COMPANY GROWTH</h3>
+            </div>
+        </div>
+        <div class="container-fluid py-5 d-flex align-items-center justify-content-center">
+            <div class="row justify-content-center">
+                <div class="col-md-3 d-flex align-items-center justify-content-center">
+                    <div class="card text-center" style="width: 15rem;">
+                        <div class="card-body">
+                            <i class="fas fa-heart mb-3" style="font-size: 2rem;"></i>
+                            <h5 class="card-title">199 +</h5>
+                            <p class="card-text">Satisfied Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center justify-content-center">
+                    <div class="card text-center" style="width: 15rem;">
+                        <div class="card-body">
+                            <i class="fas fa-clock mb-3" style="font-size: 2rem;"></i>
+                            <h5 class="card-title">1591 +</h5>
+                            <p class="card-text">Days Of Operation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center justify-content-center">
+                    <div class="card text-center" style="width: 15rem;">
+                        <div class="card-body">
+                            <i class="fas fa-clone mb-3" style="font-size: 2rem;"></i>
+                            <h5 class="card-title">283 +</h5>
+                            <p class="card-text">Complete Projects</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center justify-content-center">
+                    <div class="card text-center" style="width: 15rem;">
+                        <div class="card-body">
+                            <i class="fas fa-trophy mb-3" style="font-size: 2rem;"></i>
+                            <h5 class="card-title">75 +</h5>
+                            <p class="card-text">Win Awards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-12 project-section text-center">
+                <h6 class="text-danger">CLIENT'S FEEDBACK</h6>
+                <h3>PEOPLE SAYS'S ABOUT US !</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, repellat. Veritatis et voluptatem
+                    laudantium praesentium corporis excepturi natus quibusdam. Impedit numquam repellendus, error
+                    praesentium possimus sit reiciendis delectus tempora similique quas itaque mollitia aspernatur ab
+                    exercitationem. Doloribus atque minus veritatis.</p>
+                <p class="text-danger"> JANNAT TUMPA - C00, AMERIMAR ENTERPRISES, INC</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-2">
+                    <div class="logo-wrapper">
+                        <img src="https://media.licdn.com/dms/image/C4E0BAQG_dV-RmK3qIg/company-logo_200_200/0/1630567480874/harrison___realising_creative_environments_logo?e=2147483647&v=beta&t=qAj--M30VeMoqMNYrMkmYYfGtnKNuGR1LtiHZ0zQG60"
+                            class="logo" alt="Logo 1">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="logo-wrapper">
+                        <img src="https://i.pinimg.com/originals/fa/89/3e/fa893ed89b7f4a45af656537527d9537.jpg"
+                            class="logo" alt="Logo 2">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="logo-wrapper">
+                        <img src="https://png.pngtree.com/png-vector/20210911/ourmid/pngtree-exclusive-badge-png-image_3923972.jpg"
+                            class="logo" alt="Logo 3">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="logo-wrapper">
+                        <img src="data:image/jpeg;base64,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"
+                            class="logo" alt="Logo 4">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="logo-wrapper">
+                        <img src="data:image/png;base64,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"
+                            class="logo" alt="Logo 5">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="logo-wrapper">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRayoRwz6McZriTjwBA5pE3CK3HtElDzyjkfg&s"
+                            class="logo" alt="Logo 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Talk to us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://getform.io/f/pamqepya" method="POST">
+                        <div class="form-group">
+                            <label for="email">Work email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Work email*">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="firstName">First name</label>
+                                <input type="text" class="form-control" id="firstName" name="firstName"
+                                    placeholder="First name*">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="lastName">Last name</label>
+                                <input type="text" class="form-control" id="lastName" name="lastName"
+                                    placeholder="Last name*">
+                            </div>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="termsCheck" name="termsCheck">
+                            <label class="form-check-label" for="termsCheck">I agree to Fyle's terms and
+                                conditions,
+                                and
+                                provide consent to send me communication.</label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-danger">Contact Us</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <script src="script.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
